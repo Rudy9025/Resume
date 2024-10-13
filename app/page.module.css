@@ -305,7 +305,7 @@ width: 1dvw;
  }
    .Education .edu p{
   opacity: 0.5;
-  font-size: clamp(0.4rem, 1.3vw, 2.3rem);
+  font-size: clamp(0.65rem, 1.8vw, 1.9rem);
  }
    .Education .edu {
       font-size: clamp(0.7rem, 1.6vw, 2.5rem);
