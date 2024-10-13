@@ -202,7 +202,7 @@ const Resume = () => {
             </div>
             <div className={Styles.pdfversion}>
               <Link
-                href="/b.pdf"
+                href="/resume.pdf"
                 download
                 style={{ color: isDark ? "white" : "#404040" }}
                 className={
