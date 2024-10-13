@@ -1,0 +1,469 @@
+.container{
+    display: flex;
+    /* margin: 2%; */
+     justify-content: center;
+      height: 100vh;
+
+}
+.extras {
+   position: absolute;
+   left: 1vh;
+   bottom: 1vh;
+   display: flex;
+   gap: 2vh;
+}
+.extras .darkLight,.extras .Heart{
+   cursor: pointer;
+}
+.darkLight,
+.Heart {
+  transition: all 0.4s ease; 
+}
+
+.darkLight img,
+.Heart img {
+  transition: transform 0.4s ease, opacity 0.3s ease; 
+  height: clamp(0.6rem, 3.5vh, 6rem);  
+  width: clamp(0.6rem, 3.5vw, 6rem);
+}
+
+.darkLight img:hover,
+.Heart img:hover {
+  transform: scale(1.1);
+}
+ 
+.row1{
+    position: relative;
+     width: 28%;
+    background-size: 6vh 6vh;
+    overflow: hidden;
+    padding: 8vh 0 0 0 !important ;
+    background-image: radial-gradient(#8c8c8c 1px, transparent 0);
+  background-size: 37px 37px;
+ }
+ .cardwrapper{
+    padding:3.5vh;
+ }
+ .row1 .cardwrapper{
+    padding-top:1.8em !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vh;
+    justify-content: center;
+ }
+
+
+ .row1 .mail{
+    font-size: clamp(0.7rem, 1.5vw, 2.5rem);
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    margin-bottom: 5%;
+ }
+ .row1 .profession{
+    white-space: nowrap;
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-weight: 400;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+ }
+.row2{
+    width: 72%;
+    overflow-y: scroll;
+    /* font-size: 5dvw;  */
+    padding: 0 1%;
+ }
+  
+.mail a{
+    text-decoration: none;
+    letter-spacing: 0.5vw;
+ }
+ .hoverShadowDark:hover {
+    text-shadow: 2px -1px 19px rgba(255, 255, 255, 1);
+  }
+  
+  .hoverShadowLight:hover {
+    text-shadow: 4px -1px 5px rgba(255, 255, 0, 1); 
+  }
+  
+.socialLinks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+     justify-content: center;
+     
+}
+.socialLinks .imglinks{
+    cursor: pointer;
+    height: clamp(0.5rem, 3.2vh, 5.2rem);  
+    width: clamp(0.5rem, 3.2vw, 5.2rem);
+  }
+ 
+  
+.textLink {
+    transition: color 0.3s ease; 
+    font-size: clamp(1.5rem, 2.5vw, 3.5rem);
+}
+.textLink:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 255, 0.652);
+}
+.opacity{
+  opacity: 0.5;
+}
+.Exprerience .opacity{
+   font-size: clamp(1.1rem, 2.1vw, 3rem);
+  
+}
+.Exprerience .period{
+  font-size: clamp(0.6rem, 1.35vw, 2.3rem);
+   padding: 0;
+  display: flex;
+ }
+.period .imglinks{
+   cursor: pointer;
+  height: clamp(0.6rem, 3.5vh, 6rem);  
+  width: clamp(0.6rem, 3.5vw, 6rem);
+
+}
+/* row2  */
+
+.SideHeading{
+    font-weight: 900;
+    background-color: black;
+    color: aliceblue;
+    padding:0.05rem 1rem 0.05rem 0.2rem;
+    font-size: clamp(0.9rem, 1.9vw, 2.9rem);
+    width: fit-content;
+    margin-bottom: 0.4em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+.insideContent{
+    font-weight: 300;
+    margin-bottom: 1em;
+    font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+    word-spacing: 0.2em;
+   line-height: 1.5em;
+    }
+
+ @media (width<=768px) {
+    .container {
+        display: grid;
+    }
+    .row1, .row2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+     .row1{
+         padding: 0 0 0 0 !important ;
+    }
+    .socialLinks {
+        flex-wrap: nowrap;
+    }
+}
+
+ .Exprerience .Company{
+  line-height: 1.5em;
+ }
+ .Exprerience .Company span{
+  font-size: clamp(0.75rem, 1.65vw, 2.6rem);
+ }
+  
+.Exprerience .workProjects {
+   padding-left: 0.25em;
+   margin-bottom: 1em;
+   }
+  .Exprerience .workProjects .title{
+   font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+    margin-bottom: 0.3em;
+    opacity: 0.9;
+    font-weight: 600;
+ }
+ 
+.Exprerience .workProjects ul{
+   font-size: clamp(0.5rem, 1.4vw, 2.4rem);
+   display: flex;  
+   flex-direction: column;  
+   gap: 0.5rem;   
+   padding: 0; 
+   word-spacing: 0.2em;
+ }
+.Exprerience .workProjects ul span{
+  opacity: 0.9;
+  line-height: 1.5em;
+}
+.Exprerience .workProjects ul li{
+list-style-type: none;
+display: flex;
+}
+.Exprerience .workProjects ul li img{
+height: 1dvh;
+width: 1dvw;
+
+}
+.extras .pdfversion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.extras .pdfversion a{
+   font-size: clamp(0.7rem, 1.5vw, 2.5rem);
+  font-weight: 600;
+  transition: text-shadow 0.3s ease;
+  border-bottom: dashed 0.1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+ .pdfversionDark:hover {
+  text-shadow: 2px -1px 19px rgba(255, 255, 255, 1);
+}
+
+.pdfversionLight:hover {
+  text-shadow: 4px 0px 5px rgba(0, 255, 217, 0.549); 
+}
+
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-bottom: 1em;
+
+}
+
+.projectsContainer .projectCard {
+    flex: 0 1 calc(50% - 1rem);  
+    /* margin: 0.5rem;   */
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    margin-bottom: 0.5em;
+}
+
+@media (width<=768px) {
+    .projectsContainer .projectCard {
+        flex: 0 1 100%;  
+    }
+}
+
+.projectsContainer .projectCard .title {
+   display: flex;
+   gap: 0.45em;  
+    align-items: center; 
+   font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+    font-weight: 600;
+  }
+ 
+
+  .projectsContainer .projectCard .title img {
+   height: 0.8em;  
+   width: 0.8em;  
+   cursor: pointer;
+}
+.projectsContainer .projectCard .shortdescription{
+    opacity: 0.8;
+    font-weight: 400;
+   font-size: clamp(0.5rem, 1.4vw, 2.4rem);
+   word-spacing: 0.2em;
+} 
+.projectsContainer .projectCard .star{
+    font-size: clamp(0.5rem, 1.5vw, 2.4rem);
+ } 
+  .moreProjects{
+   font-size: clamp(0.7rem, 1.5vw, 2.5rem);
+   font-weight: 600;
+   transition: text-shadow 0.3s ease;
+   border-bottom: dashed 0.1em;
+    cursor: pointer;
+ }
+
+ .stack table tr td{
+   font-size: clamp(0.5rem, 1.4vw, 2.4rem);
+   padding: 0.4em;
+   word-spacing: 0.2em;
+ }
+.stack{
+   margin-bottom: 1em;
+}
+ .stack table tr td:first-child {
+   font-size: clamp(0.6rem, 1.5vw, 2.5rem);
+   font-weight: 800;
+ }
+
+ .Education{
+   display: flex;
+   flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1em;
+ }
+ .Education .edu,
+   .Education .edu p{
+   word-spacing: 0.2em;
+ }
+   .Education .edu p{
+  opacity: 0.5;
+  font-size: clamp(0.4rem, 1.3vw, 2.3rem);
+ }
+   .Education .edu {
+      font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+ }
+   .Education .edu span {
+    line-height: 1.5em;
+ }
+
+ .projectsContainer .projectCard .star img{
+   height: 0.75em;
+   width: 0.75em;
+} 
+ 
+
+.Achievements .ach {
+   display: flex;
+   gap: 0.45em;  
+    align-items: center; 
+    font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+   margin-bottom: 0.5em;
+   line-height: 1.5em;
+    }
+.Achievements .ach span{
+  position: relative;
+  word-spacing: 0.2em;
+  }
+   .Achievements .ach  img {
+   height: 0.8em;  
+   width: 0.8em;  
+   cursor: pointer;
+   /* position: absolute; */
+   /* bottom: 0.17em; */
+ }
+
+ .Achievements{
+   margin-bottom: 1em;
+ }
+
+
+.certifications .certify {
+   display: flex;
+   gap: 0.45em;  
+    align-items: center; 
+    font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+   margin-bottom: 0.5em;
+   line-height: 1.5em;
+    }
+.certifications .certify span{
+  position: relative;
+  word-spacing: 0.2em;
+  }
+   .certifications .certify img {
+   height: 0.8em;  
+   width: 0.8em;  
+   cursor: pointer;
+   /* position: absolute; */
+   /* bottom: 0.17em; */
+ }
+
+ .certifications{
+   margin-bottom: 1em;
+ }
+
+.Interests .hobby {
+   display: flex;
+   gap: 0.45em;  
+    align-items: center; 
+    font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+   margin-bottom: 0.5em;
+   line-height: 1.5em;
+    }
+.Interests .hobby span{
+  position: relative;
+  word-spacing: 0.2em;
+  }
+ 
+ .Interests{
+   margin-bottom: 1em;
+ }
+
+
+.Languages .lang {
+   display: flex;
+   gap: 0.45em;  
+    align-items: center; 
+    font-size: clamp(0.7rem, 1.6vw, 2.5rem);
+   margin-bottom: 0.5em;
+   line-height: 1.5em;
+    }
+.Languages .lang span{
+  position: relative;
+  word-spacing: 0.2em;
+  }
+ 
+
+ .Languages{
+   margin-bottom: 1em;
+ }
+
+.bosch:hover{
+color: aqua;
+}
+.bosch{
+transition: color 0.5s ease;
+/* line-height: 0.5em; */
+}
+
+
+
+
+/* name art  */
+.row1 .name{
+   font-size: clamp(1rem, 3vw, 4rem);
+   font-weight: 900;
+   white-space: nowrap;
+   display: flex;
+   justify-content: center;
+    cursor: default;  
+ } 
+ 
+ .name span {
+    color: #fd1057;
+   position: relative;
+   text-shadow: -1px 0 0 rgba(0, 0, 0, .2);
+   
+}
+ .name span::before {
+   content: attr(data-title);
+   position: absolute;
+   top: 0;
+   left: 0;
+   transform-origin: left;
+   /* color: #fff; */
+   transition: .4s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+ }
+ .dark span::before {
+   color: black; /* Dark mode color */
+}
+
+.light span::before {
+   color: white; /* Light mode color */
+}
+.name span:hover::before {
+   transform: perspective(1000px) rotate(-12deg);
+   text-shadow: 2px 1px 21px rgba(253, 16, 87, 1),
+             -2px 1px 8px rgba(253, 16, 87, 1);
+}
+
+/* Specific styles for the letter S */
+.specialS:hover {
+   transform: rotate(15deg) !important; 
+ }
+
+.specialS::before {
+   transform: rotate(-12deg);  
+}
+
+ 
