@@ -14,6 +14,7 @@
    bottom: 1vh;
    display: flex;
    gap: 2vh;
+   padding-left: 0.5em;
 }
 .page_extras__1vk_3 .page_darkLight__tGc5g,.page_extras__1vk_3 .page_Heart__U5ZzX{
    cursor: pointer;
@@ -95,7 +96,7 @@
     flex-wrap: wrap;
     gap: 2vh;
      justify-content: center;
-     
+     margin-bottom: 1em;
 }
 .page_socialLinks__DXn_Y .page_imglinks__mO47U{
     cursor: pointer;
@@ -212,7 +213,7 @@ width: 1dvw;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+ }
 .page_extras__1vk_3 .page_pdfversion__wy9_O a{
    font-size: clamp(0.7rem, 1.5vw, 2.5rem);
   font-weight: 600;

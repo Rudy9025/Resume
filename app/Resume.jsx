@@ -179,6 +179,8 @@ const Resume = () => {
           name: project.name,
           description: project.description,
           starred: !project.starred,
+          githubLink: project.githubLink,
+          liveLink: project.liveLink
         };
       }
       return project;
@@ -218,6 +220,9 @@ const Resume = () => {
         description: project.description,
         starred: starred === "true",
         count: count ? parseInt(count) : project.count,
+        githubLink: project.githubLink,
+          liveLink: project.liveLink
+
       };
     });
     setStarredProjects(starredProjectsFromCookies);
@@ -404,7 +409,7 @@ const Resume = () => {
                           height={10}
                           width={10}
                           onMouseEnter={(e) =>
-                            (e.currentTarget.src = "/svg/on -link.svg")
+                            (e.currentTarget.src = "/svg/on-link.svg")
                           }
                           onMouseLeave={(e) => (e.currentTarget.src = linkSrc)}
                           onClick={() => window.open(project.liveLink)}
