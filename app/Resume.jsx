@@ -55,6 +55,14 @@ const socialLinks = [
 const initialProjects = [
   {
     id: 1,
+    name: "Car Rental System",
+    githubLink: "https://github.com/Rudy9025/Car.Rental",
+    liveLink: "https://car-rental-rudy.vercel.app/",
+    count: 909,
+    description: "Effortless car booking, secure Google SSO login, real-time availability.",
+  },
+  {
+    id: 2,
     name: "AI Companion",
     githubLink: "https://github.com/Rudy9025/Rudys.Ai.Girlfriend",
     liveLink: "https://rudys-girlfriend-ai.onrender.com/",
@@ -62,7 +70,7 @@ const initialProjects = [
     description: "Virtual Companion with AI Chat and 3D Dance",
   },
   {
-    id: 2,
+    id: 3,
     name: "Ubuntu Themed Personal Portfolio",
     githubLink: "https://github.com/Rudy9025/Rudys.Portfolio",
     liveLink: "https://rudys-portfolio.vercel.app/",
@@ -70,21 +78,14 @@ const initialProjects = [
     description: "Ubuntu-Inspired NextJs Portfolio with EmailJS Contact",
   },
   {
-    id: 3,
+    id: 4,
     name: "Car Configurator",
     githubLink: "https://github.com/Rudy9025/Rudys.Car.Configurator",
     liveLink: "https://main--rudys-car-configurator.netlify.app/",
     count: 741,
     description: "Customize Luxury Cars in 3D Virtual Showroom Experience",
   },
-  {
-    id: 4,
-    name: "Base Conversions",
-    githubLink: "https://github.com/Rudy9025/Base.Conversions",
-    liveLink: "https://www.npmjs.com/package/base-conversions",
-    count: 909,
-    description: "Effortless Base Conversions with JavaScript npm package",
-  },
+  
 ];
 
 const Resume = () => {
