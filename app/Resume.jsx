@@ -808,15 +808,15 @@ const Resume = () => {
                       <tr>
                         {" "}
                         <td>Frontend</td>{" "}
-                        <td>JavaScript, React, Threejs, Next, Vite</td>{" "}
+                        <td>JavaScript, React, Three.JS, Next.JS, Vite</td>{" "}
                       </tr>
                       <tr>
                         {" "}
-                        <td>Backend</td> <td>Node, Express, Docker, Kafka </td>{" "}
+                        <td>Backend</td> <td>Node, Express, Docker, Kafka, Flask </td>{" "}
                       </tr>
                       <tr>
                         {" "}
-                        <td>Database</td> <td>MySQL, MongoDB, Oracle</td>{" "}
+                        <td>Database</td> <td>MySQL, MongoDB, PostgreSQL</td>{" "}
                       </tr>
                       <tr>
                         {" "}
