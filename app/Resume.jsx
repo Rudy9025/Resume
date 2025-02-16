@@ -378,10 +378,7 @@ const Resume = () => {
                 interfaces. I take great care in the experience, architecture,
                 and code quality of the things I build.
                 <br />
-                <br />I am also an open-source enthusiast and maintainer. I love
-                how collaboration and knowledge sharing happens through
-                open-source and I am happy to see what I do could eventually
-                feedback to the community and industry.
+                <br />I am also deeply committed to continuous learning and staying at the forefront of emerging technologies. I love exploring new tools, frameworks, and methodologies that push the boundaries of what’s possible, ensuring the solutions I create are both innovative and efficient.
               </div>
               <div className={Styles.Exprerience}>
                 <div className={Styles.SideHeading}>Projects</div>
@@ -858,6 +855,31 @@ const Resume = () => {
                   Achievements and Honors
                 </div>
                 <div className={Styles.Achievements}>
+                   <div className={Styles.ach}>
+                                      <span>
+                                        {" "}
+                                        <span style={{ fontWeight: "600" }}>
+                                         BNPP INNOVERSITÉ Hackathon 2025
+                                        </span>{" "}
+                                        Competed in the 24-hour hackathon, applying technical expertise to solve real-world tech challenges. |{" "}
+                                        <b>Live&nbsp;</b>
+                                        <Image
+                                          src={linkSrc}
+                                          height={10}
+                                          width={10}
+                                          onMouseEnter={(e) =>
+                                            (e.currentTarget.src = "/svg/on-link.svg")
+                                          }
+                                          onMouseLeave={(e) => (e.currentTarget.src = linkSrc)}
+                                          onClick={() =>
+                                            window.open(
+                                              "https://drive.google.com/file/d/1UAVc27G5egSOfuB3Gbev3RcfztGkmXlr/view"
+                                            )
+                                          }
+                                          alt="Arrow Link"
+                                        />
+                                      </span>
+                                    </div>
                   <div className={Styles.ach}>
                     <span>
                       {" "}
@@ -884,24 +906,8 @@ const Resume = () => {
                       />
                     </span>
                   </div>
-                  <div className={Styles.ach}>
-                    <span>
-                      <span style={{ fontWeight: "600" }}>
-                        Graduated with High Honors in Computer Science
-                      </span>{" "}
-                      from Presidency University, reflecting outstanding
-                      academic performance.
-                    </span>
-                  </div>
-                  <div className={Styles.ach}>
-                    <span>
-                      <span style={{ fontWeight: "600" }}>
-                        Secured the second-place
-                      </span>{" "}
-                      position in the Inter-College Volleyball Championship
-                    </span>
-                  </div>
-                  <div className={Styles.ach}>
+                   
+                   <div className={Styles.ach}>
                     <span>
                       <span style={{ fontWeight: "600" }}>
                         {" "}
