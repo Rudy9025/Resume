@@ -466,6 +466,42 @@ const Resume = () => {
                 </div>
 
                 <div className={Styles.SideHeading}>Work Experience</div>
+                 <div className={Styles.Company}>
+                                  <span
+                                    style={{ cursor: "pointer" }}
+                                    onClick={() => window.open("https://group.bnpparibas/en/")}
+                                  >
+                                    <b className={Styles.bosch}>BNP PARIBAS</b>
+                                  </span>
+                                  &nbsp;
+                                  <span
+                                    style={{
+                                      opacity: "0.5",
+                                      fontSize: "clamp(0.7rem, 1.6vw, 2.5rem)",
+                                    }}
+                                  >
+                                   &nbsp; Software Development Engineer{" "}
+                                  </span>
+                                </div>
+                
+                                <div className={Styles.period}>
+                                  <span style={{ display: "flex", alignItems: "center" }}>
+                                    <span style={{ opacity: "0.5", marginRight: "0.3em" }}>
+                                      Current | onsite  
+                                    </span>
+                                   </span>
+                                </div>
+                                 <div className={Styles.workProjects}>
+                                   <ul>
+                                    <li>
+                                      &ensp;&ensp;
+                                       &ensp;
+                                      <span>
+                                      I design and develop efficient software solutions to optimize business operations. I collaborate with teams to build reliable, secure applications that meet business needs and drive innovation.
+                                      </span>
+                                    </li>
+                                   </ul>
+                                </div>
                 <div className={Styles.Company}>
                   <span
                     style={{ cursor: "pointer" }}
@@ -535,9 +571,7 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Built a Next.js application with MySQL for secure
-                        employee and family member registrations for the Family
-                        Day 2024 event.
+                      Created a secure Next.js application with MySQL for Family Day 2024 registrations, featuring authentication, session management, protected routes, and an admin portal for data uploads and participation reports.
                       </span>
                     </li>
                     <li>
@@ -553,12 +587,10 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Implemented robust authentication, session management,
-                        and protected routes for secure admin data uploads in
-                        multiple formats.{" "}
+                      Enhanced performance and scalability by utilizing Next.js SSR/SSG and React Hooks for a seamless user experience.
                       </span>
                     </li>
-                    <li>
+                    {/* <li>
                       &ensp; &ensp;
                       <span>
                         <Image
@@ -575,8 +607,8 @@ const Resume = () => {
                         member addition and created an admin portal for
                         generating comprehensive participation reports.{" "}
                       </span>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       &ensp; &ensp;
                       <span>
                         <Image
@@ -593,7 +625,7 @@ const Resume = () => {
                         React Hooks, to enhance user experience, performance,
                         and application scalability.{" "}
                       </span>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
 
@@ -623,8 +655,7 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Developed a scalable ReactJS application with an
-                        ExpressJS and NodeJS backend for SMT changeover.
+                      Developed a scalable ReactJS application with an ExpressJS and NodeJS backend for SMT changeover, designing a modular architecture to support a data pipeline for 14 production lines.
                       </span>
                     </li>
                     <li>
@@ -640,11 +671,10 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Designed a modular architecture to support a data
-                        pipeline for 14 SMT production lines.
+                      Created a real-time FIDS display with automatic refresh every 10 minutes, leveraging Oracle MySQL queries to ensure data integrity and consistency across databases.
                       </span>
                     </li>
-                    <li>
+                    {/* <li>
                       &ensp;&ensp;
                       <span>
                         <Image
@@ -660,8 +690,8 @@ const Resume = () => {
                         Created a real-time FIDS display with automatic refresh
                         every 10 minutes for data accuracy.
                       </span>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                       &ensp;&ensp;
                       <span>
                         <Image
@@ -674,10 +704,10 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Utilized Oracle MySQL queries within the data pipeline
-                        to ensure integrity and consistency across databases.
+                       
+                       
                       </span>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
 
@@ -690,11 +720,19 @@ const Resume = () => {
                         fontSize: "clamp(0.6rem, 1.35vw, 2.3rem)",
                       }}
                     >
-                      Azure AD SSO Solution{" "}
+                      Azure AD SSO Solution{" "} 
+                    </c> | Internet Information Services
+                    <c
+                      style={{
+                        opacity: "0.5",
+                        fontSize: "clamp(0.6rem, 1.35vw, 2.3rem)",
+                      }}
+                    >
+                     &nbsp; Deployment{" "} 
                     </c>
                   </p>
                   <ul>
-                    <li>
+                     <li>
                       &ensp;&ensp;
                       <span>
                         <Image
@@ -707,8 +745,7 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Implemented SSO using Azure AD for federated identity
-                        management across multiple applications.
+                      Set up Single Sign-On (SSO) using Azure AD for smooth identity management across apps, utilizing jwt-decode to pull JWT token claims securely and storing user credentials in sessionStorage for easy access across sessions.
                       </span>
                     </li>
                     <li>
@@ -724,31 +761,13 @@ const Resume = () => {
                       </span>
                       &ensp;
                       <span>
-                        Utilized jwt-decode to extract claims from JWT tokens,
-                        ensuring secure authentication and data protection.
-                      </span>
-                    </li>
-                    <li>
-                      &ensp;&ensp;
-                      <span>
-                        <Image
-                          onMouseEnter={() => setCircle("/svg/on-circle.svg")}
-                          onMouseLeave={() => setCircle("/svg/circle.svg")}
-                          src={circle}
-                          height={12}
-                          width={12}
-                        />
-                      </span>
-                      &ensp;
-                      <span>
-                        Stored authenticated user credentials in sessionStorage
-                        for seamless access across applications and sessions.
+                      Managed IIS deployments with load balancing and auto-scaling to maintain high availability and security, using RDP for remote server control and configuring HTTPS with specific ports for secure access.
                       </span>
                     </li>
                   </ul>
                 </div>
 
-                <div className={Styles.workProjects}>
+                {/* <div className={Styles.workProjects}>
                   <p className={Styles.title}>
                     Internet Information Services &nbsp;
                     <c
@@ -796,7 +815,7 @@ const Resume = () => {
                       </span>
                     </li>
                   </ul>
-                </div>
+                </div>  */}
 
                 <div className={Styles.SideHeading}>Stacks</div>
                 <div className={Styles.stack}>
@@ -809,11 +828,11 @@ const Resume = () => {
                       </tr>
                       <tr>
                         {" "}
-                        <td>Backend</td> <td>Node, Express, Docker, Kafka, Flask </td>{" "}
+                        <td>Backend</td> <td>Node, Express, .NET, Docker, Flask </td>{" "}
                       </tr>
                       <tr>
                         {" "}
-                        <td>Database</td> <td>MySQL, MongoDB, PostgreSQL</td>{" "}
+                        <td>Database</td> <td>MySQL, MongoDB, PostgreSQL, Oracle</td>{" "}
                       </tr>
                       <tr>
                         {" "}
@@ -840,7 +859,7 @@ const Resume = () => {
                       </strong>
                       , Jain (Deemed-to-be University), Bangalore
                     </span>
-                    <p> Aug 2023 – June 2025 </p>
+                    <p> Aug 2023 – May 2025 </p>
                   </div>
                   <div className={Styles.edu}>
                     <span>
