@@ -372,7 +372,7 @@ const Resume = () => {
             <div className={Styles.about}>
               <div className={Styles.SideHeading}>About</div>
               <div className={Styles.insideContent}>
-                My name is Rudresh G, a master of computer science student and
+                I'm Rudresh G, a Master of Computer Science student and
                 an Application Developer. My passion for software lies with
                 dreaming up ideas and making them come true with elegant
                 interfaces. I take great care in the experience, architecture,
@@ -824,11 +824,11 @@ const Resume = () => {
                       <tr>
                         {" "}
                         <td>Frontend</td>{" "}
-                        <td>JavaScript, React, Three.JS, Next.JS, Vite</td>{" "}
+                        <td>AngularJS, ReactJS, ThreeJS, NextJS, JavaScript</td>{" "}
                       </tr>
                       <tr>
                         {" "}
-                        <td>Backend</td> <td>Node, Express, .NET, Docker, Flask </td>{" "}
+                        <td>Backend</td> <td>Node, Express, Springboot, Flask </td>{" "}
                       </tr>
                       <tr>
                         {" "}
